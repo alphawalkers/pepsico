@@ -22,6 +22,15 @@
   <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet" />
+<style>
+  .eextra { 
+      display: none;
+  }
+  
+  p:hover .eextra {
+      display: inline-block;
+  }
+</style>
 
 </head>
 
@@ -410,7 +419,7 @@
                     <td>0301-9232912</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -424,7 +433,7 @@
                     <td>0305-9232232</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -438,7 +447,7 @@
                     <td>0321-1923912</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -452,7 +461,7 @@
                     <td>0341-5232232</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -466,7 +475,7 @@
                     <td>0333-7232219</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -480,7 +489,7 @@
                     <td>0321-0634912</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -494,7 +503,7 @@
                     <td>0331-4232512</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -508,7 +517,7 @@
                     <td>0311-4232212</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -522,7 +531,7 @@
                     <td>0321-6232312</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -536,7 +545,7 @@
                     <td>0323-6232212</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-success" href="#"><i class="fa fa-download"></i></a>
                         <a class="btn btn-danger" href="#"><i class="fa fa-phone"></i></a>
                       </div>
@@ -548,7 +557,55 @@
           </div>
         </div>
         
-
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Select Email</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="checkbox">
+                  <p><input type="checkbox" value="">Reminder Email 
+                    <span class="eextra"> =>     My hidden text!</span>
+                  </p>
+                  
+                </div>
+                <div class="checkbox">
+                  <p><input type="checkbox" value="">10th date email
+                    <span class="eextra"> =>     Since the last ten days you have not submitted...</span>
+                  </p>
+                </div>
+                <div class="checkbox">
+                  <p><input type="checkbox" value="">4 day late email
+                    <span class="eextra"> =>    You four days invoices have...</span>
+                  </p>
+                </div>
+                <div class="checkbox">
+                  <p><input type="checkbox" value="">10 day late email
+                    <span class="eextra"> =>     Hey where have you been for ...</span>
+                  </p>
+                </div>
+                <div class="checkbox">
+                  <p><input type="checkbox" value="">1 month late email
+                    <span class="eextra"> =>     Month has completed so....</span>
+                  </p>
+                </div>
+                <div class="checkbox">
+                  <p><input type="checkbox" value="">3 month late block email
+                    <span class="eextra"> =>     Seriour notice, you are warned...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- page start-->
         <div class="row">
           <div class="col-sm-12">
@@ -597,29 +654,37 @@
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
+                    <th>Supplier</th>
+                    <th>Contract No</th>
+                    <th>Contract Price</th>
+                    <th>Amount Withheld</th>
+                    <th>Total Payment</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>Umair</td>
+                    <td>211215</td>
+                    <td>117000</td>
+                    <td>6800</td>
+                    <td>111200</td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td>Ajmal</td>
+                    <td>398215</td>
+                    <td>217000</td>
+                    <td>67800</td>
+                    <td>341200</td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <td>Hasan</td>
+                    <td>3411215</td>
+                    <td>237000</td>
+                    <td>5400</td>
+                    <td>341200</td>
                   </tr>
                 </tbody>
               </table>
